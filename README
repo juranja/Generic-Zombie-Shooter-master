@@ -1,0 +1,97 @@
+-----------------------
+Author: Darin Beaudreau
+Version: 1.0
+-----------------------
+
+Description:
+
+Generic Zombie Shooter is a simple overhead shooter game. Kill as many zombies as you can!
+
+Instructions:
+
+The game is finally complete, and ready to play! Below are the controls and everything you need to know.
+You can download the JAR here: https://www.dropbox.com/s/t43ov84snt658zh/GenericZombieShooter.zip
+Included is a BAT file that will launch the game for you. The LIB folder and the BAT file MUST be in the same folder
+as the JAR file.
+
+Controls:
+
+  WASD keys - Movement
+  Mouse - Aim
+  Left Click/Hold - Fire equipped weapon.
+  0-9 - Select Weapons
+  Mouse Scroll Wheel - Quick Select Weapon (Up = Left, Down = Right)
+  B - Open Weapon Store
+  T - Open Experience / Leveling Screen
+  P - Pause Game
+  
+Zombie Types:
+
+  - Zumby, the most basic zombie. It's the slowest of the zombies and does minimal damage. But if they swarm you,
+    they can be very formidable.
+  - Rotdog, a fast zombie dog that moves twice as fast as normal zombies and does 3x the damage.
+  - Upchuck, a hideous hulking green zombie that spits blobs of acid at you.
+  - Gasbag, a zombie that is twice as fast as normal zombies and explodes into a cloud of poisonous gas when
+    killed that does poison damage over time. Grab a medkit to heal!
+  - Big Mama, an ugly pale creature resembling a Wight that, if not killed fast enough, will burst into a
+    swarm of tiny zombies. The burst of blood also does damage, so watch out for these!
+  - Tiny Zumby, a much smaller and faster version of the Zumby, but weaker.
+  
+Boss Types:
+
+  - Aberration, the first of the zombie boss types. It is a disgusting, shapeless green horror characterized by
+    its many tentacles and the opening on top of it that is lined with razor sharp teeth all around. This opening
+    will shoot acid (subject to change) at the player if he is too close in buck shots, like the Boomstick. The
+    Aberration has an extremely large amount of health, and will take your strongest weapons to extinguish. The
+    Aberration will appear every 25 waves (wave 25, 50, 75, etc... for now). Such a beast is worth a large sum of
+    cash and a lot of experience. Are you up to the challenge?
+  - Zombat, the second of the zombie boss types. It has the strange idea that it can fly, and flaps its arms
+    rapidly to achieve lift... oddly enough, it works, and they will float fast across the screen toward the player.
+    However ridiculous they seem, they are very deadly. If they get close enough to the player, they can drain
+    his health to replenish their own. They have quite a substantial health supply and appear in groups of 5 during
+    boss waves, but are well worth the risk for the reward. (Credit to MM4ge for the idea!)
+  - Stitches, the third and final boss type. Stitches is a hulking abomination that seems to be made up of parts of
+    other zombies. Stitches is incredibly durable, and does massive melee damage... but that's not what makes Stitches
+    so deadly. Stitches has the ability to shoot a hook from his stomach that he uses to reel the player in closer to
+    him. To make matters worse, when the player is close enough to Stitches, he will deal poison damage to the player
+    with his stinky aura. Stitches is a force to be reckoned with, and is well worth the reward.
+  
+Items:
+
+  - Health Pack, heals the player and removes the poison effect.
+  - Ammo Crate, gives the player some ammo for a random weapon. These may be removed/changed soon.
+  - SpeedUp, doubles the player's movement speed for 10 seconds.
+  - Unlimited Ammo, stops ammo consumption for the Assault Rifle, Shotgun, and Flamethrower for 10 seconds.
+  - Extra Life, gives the player 1 extra life.
+  - Experience Multiplier, doubles the player's experience for 20 seconds.
+  - Invulnerability, makes the player invincible for a short time.
+  - Night Vision, makes it easier to see for 30 seconds.
+
+Copyright Information:
+
+Generic Zombie Shooter is distributed under the GNU Public License. A copy of this license can be found along with
+the project on Github, or at http://www.gnu.org/licenses/gpl.txt
+
+Changes:
+
+  - Version 1.0 release.
+
+Known Issues:
+
+  - After playing for a while, sound starts to crackle and pop randomly. I noticed this starts when I use the
+    Sentry Gun and Assault Rifle in tandem. Since they use the same sound and are being loaded so rapidly,
+    this might be the cause.
+
+Planned Future Changes (post-1.0):
+  - Add a day-night cycle so you need your flashlight/flares at night.
+  - Add randomly generated terrain (buildings, etc) to make combat a bit more interesting.
+  - Add pathing AI to make the aforementioned terrain possible.
+  - Add level-based gameplay.
+      - Level based gameplay could revolve around a map with areas that are unexplored. Each day, you can
+        choose to explore an area and fight the zombies in it and rescue survivors and do other things. You
+        could travel at night, but it would be dark and there would be less visible (lighting system) and chances
+        of more dangerous zombies and in larger numbers.
+  - Change enemy AI so they attack when you are in their line of sight. Also will make player give off
+    "footsteps" so zombies can detect you at a certain distance. Any zombies that detect you will make
+    "noise" that will attract any zombies near that zombie to attack as well, creating "hordes".
+  - (Optional) Re-design game engine and migrate to either LWJGL/Slick2D or LibGDX.
